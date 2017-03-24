@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head starts -->
+
 <head>
 
     <meta charset="utf-8">
@@ -22,10 +22,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="bootstrap-dropselect.js"></script>
 </head>
-<!-- Head ends -->
 
-<!-- Body starts -->
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -208,7 +207,7 @@
                 <div class="row content">
             <div class="col-lg-6 sidenav">
             <hr />
-            <!-- Select 1 starts -->
+          <!-- ololol -->
                 <div class="form-group">
                 <label for="exampleSelect1">Зацікавленості</label>
                    <select class="form-control" id="exampleSelect1">
@@ -219,21 +218,7 @@
                       <option>5</option>
                     </select>
                   </div>
-                  <!-- Select 1 ends -->
-            <!-- Select 2 starts -->
-                <div class="form-group">
-                <label for="exampleSelect1">Зацікавленості</label>
-                   <select class="form-control" id="exampleSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <!-- Select 2 ends -->
-
-            <!-- Select 3 starts -->
+<!-- ololol -->
                 <div class="form-group">
                 <label for="exampleSelect1">Зацікавленості</label>
                    <select class="form-control" id="exampleSelect1">
@@ -245,8 +230,7 @@
                     </select>
                   </div>
 
-            <!-- Select 3 ends -->
-            <!-- Select 4 starts -->
+<!-- ololol -->
                 <div class="form-group">
                 <label for="exampleSelect1">Зацікавленості</label>
                    <select class="form-control" id="exampleSelect1">
@@ -257,28 +241,39 @@
                       <option>5</option>
                     </select>
                   </div>
-            <!-- Select 4 ends -->
-            <!-- Data starts -->
+
+<!-- ololol -->
+                <div class="form-group">
+                <label for="exampleSelect1">Зацікавленості</label>
+                   <select class="form-control" id="exampleSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
                  <div class="form-group">
                   <label for="example-date-input" class="col-2 col-form-label">Дата</label>
                       <div class="col-10">
                         <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                       </div>
                     </div>
-            <!-- Data ends -->
                   <hr />
-            <!-- Button starts -->
                   <button type="submit" class="btn btn-primary">Submit</button>
-             <!-- Button ends -->
+                
 
             </div>
-    <!-- Ends -->
+        <!-- end left bar -->
     <!-- Page Content -->
     <div class="col-lg-3">
 
-      <div class="col-lg-12 sidenav">
-        <hr>
-      <!-- Check box starts -->
+        <!-- Page Heading/Breadcrumbs -->
+       <!-- <div class="row content"> -->
+         
+               <div class="col-lg-12 sidenav">
+          <hr>
+
      <label for="exampleSelect1">Зацікавленості</label>
       <div class="checkbox">
           <label><input type="checkbox" name="">Люди з вадами</label>
@@ -316,10 +311,14 @@
         <div class="checkbox">
           <label><input type="checkbox" name="">Ліквідація наслідків стихійних лих/безпека</label>
         </div>
-        <!-- <div class="checkbox">
+        <div class="checkbox">
           <label><input type="checkbox" name="">Освіта</label>
-        </div> -->
-        <!-- Cheack box ends -->
+        </div>
+        
+
+
+        <!-- /.row -->
+
         <hr>
         </div>
         </div>
@@ -327,11 +326,13 @@
     <!-- /.container -->
       
     <div class="col-lg-3">
+
+        <!-- Page Heading/Breadcrumbs -->
        <!-- <div class="row content"> -->
          
-        <div class="col-lg-12  sidenav">
+               <div class="col-lg-12  sidenav">
           <hr>
-          <!-- Cheack box starts left hand side -->
+
      <label for="exampleSelect1">Зацікавленості</label>
       <div class="checkbox">
           <label><input type="checkbox" name="">Безробіття</label>
@@ -358,9 +359,6 @@
           <label><input type="checkbox" name="">Волонтерство закордоном</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="">Освіта</label>
-        </div>
-        <div class="checkbox">
           <label><input type="checkbox" name="">Something</label>
         </div>
         <div class="checkbox">
@@ -369,34 +367,52 @@
         <div class="checkbox">
           <label><input type="checkbox" name="">Something</label>
         </div>
-        <hr>
-      <!--   <div class="checkbox">
+        <div class="checkbox">
           <label><input type="checkbox" name="">Something</label>
-        </div> -->
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Something</label>
+        </div>
         
-      <!-- Cheack box ends right hand side -->
+
 
         <!-- /.row -->
- 
-        <hr>
-        </div>
-        </div>
-        </div>
-        <hr>
-        <!-- Have problems starts -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Якщо  у вас виникли питання або побажання щодо роботи сайту.ВАПРОЛДВВАПРОапролапфірвиіриаліоаліво варпилвоплв вролпвркоплв рлав</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Написати</a>
-                </div>
+    
+
+        
+
+        <!-- Features Section 
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Modern Business Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v3.3.7</strong>
+                    </li>
+                    <li>jQuery v1.11.1</li>
+                    <li>Font Awesome v4.2.0</li>
+                    <li>Working PHP contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
-        <!-- Have broblems ends -->
+        <!-- /.row -->
+
+    
+
 
         <hr>
+
+      
+
+    </div>
 </div>
 </div>
 </div>
@@ -406,7 +422,6 @@
     
 
     <!-- /.container -->
-    <!-- Footer starts -->
         <footer id="myFooter">
         <div class="container">
             <div class="row">
@@ -451,7 +466,6 @@
             <p>© 2016 Copyright Text </p>
         </div>
     </footer>
-    <!-- Footer ends -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -1,0 +1,53 @@
+body {
+}
+
+#user_photo {
+  width: 90%;
+}
+
+
+#heading {
+  display: inline-flex;
+  width: 100%;
+}
+
+.col-lg-12 {
+  display: inline-flex;
+
+}
+
+.col-lg-12 h1 {
+  width: 80%;
+}
+
+#heading h2 {
+  float: right;
+  width: 20%;
+  margin: 40px 0 20px 0;
+}
+
+.col-md-8 {
+  width: 20%;
+}
+#user_mail_form {
+  margin-top: 5%;
+  width: 90%;
+}
+
+#user_info_box, #user_info_box_2{
+  float: left;
+}
+#user_info_box h3, #user_info_box_2 h3 {
+  margin-top: 0;
+}
+#user_info_box ul, #user_info_box_2 ul {
+  padding-left: 0;
+}
+.input-group-addon {
+  width: 40%;
+}
+
+.btn-primary {
+  margin-left: 10px;
+  background-color: #488E47;
+}

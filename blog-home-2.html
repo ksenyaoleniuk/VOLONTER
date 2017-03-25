@@ -122,102 +122,226 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Blog Home Two
+                <h1 class="page-header">Реєстрація організації
                     <small>Subheading</small>
                 </h1>
-                <ol class="breadcrumb">
+
+            <div class="alert alert-danger">
+            <label for="example-password-input" class="col-2 col-form-label">Увага! Можливість реєстрації організацій надається тільки зареєстрованим користувачам.<a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Натисніть щоб перейти до реєстрації користувача.</a></label>  
+
+  <!-- <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
+            </div>
+
+                <!-- <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
                     <li class="active">Blog Home Two</li>
-                </ol>
+                </ol> -->
+                <hr>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Blog Post Row -->
-        <div class="row">
-            <div class="col-md-1 text-center">
-                <p><i class="fa fa-camera fa-4x"></i>
-                </p>
-                <p>June 17, 2014</p>
-            </div>
-            <div class="col-md-5">
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
-                </a>
-            </div>
+         <div class="row">
+
+            <!-- Blog Entries Column -->
             <div class="col-md-6">
-                <h3>
-                    <a href="blog-post.html">Blog Post Title</a>
-                </h3>
-                <p>by <a href="#">Start Bootstrap</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
-        <hr>
+                <!-- First Blog Post -->
+               <!--  <h2>
+                    <a href="#">Blog Post Title</a>
+                </h2> -->
+               <!--  <hr>
 
-        <!-- Blog Post Row -->
-        <div class="row">
-            <div class="col-md-1 text-center">
-                <p><i class="fa fa-film fa-4x"></i>
-                </p>
-                <p>June 17, 2014</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a> -->
+
+                <!-- <hr> -->
+                <div class="col-10">
+
+                <label for="example-text-input" class="col-2 col-form-label">Назва організації</label>
+                  <div class="col-10">
+                    <input class="form-control" type="text" value="Введіть назву організації" id="example-text-input">
+                  </div>
+                  </div>
+
+<div class="col-10">
+  <label for="example-search-input" class="col-2 col-form-label">Вебсайт</label>
+  <div class="col-10">
+    <input class="form-control" type="search" value="www.example.com" id="example-search-input">
+  </div>
+  </div>
+
+  <div class="col-10">
+  <label for="example-search-input" class="col-2 col-form-label">Номер реєстрації підриємства</label>
+  <div class="col-10">
+    <input class="form-control" type="search" value="Введіть номер реєстрації" id="example-search-input">
+  </div>
+  </div>
+
+<div class="col-10">
+  <label for="example-email-input" class="col-2 col-form-label">Пошта організації</label>
+  <div class="col-10">
+    <input class="form-control" type="email" value="myexample@example.com" id="example-email-input">
+  </div>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleSelect1">Виберіть тип оргіназації</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Nonprofit or community organization</option>
+      <option>Govermanet agency</option>
+      <option>Social enterprise</option>
+      <option>Recruitment firm</option>
+      <option>Consultant/vendor to nonprofits</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleSelect1">Виберіть місцеположення</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Київ</option>
+      <option>Львів</option>
+      <option>Одеса</option>
+      <option>Харків</option>
+      <option>Дніпро</option>
+    </select>
+  </div>
+  <div class="form-group">
+  <label for="comment">Опис організації</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+
+
+
+<button type="button" class="btn btn-success">Зареєструватись</button>
+
+
+
+ <hr>
+  <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label>              
+
             </div>
-            <div class="col-md-5">
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
-                </a>
-            </div>
+
+
+
+
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <!-- <hr> -->
             <div class="col-md-6">
-                <h3><a href="blog-post.html">Blog Post Title</a>
-                </h3>
-                <p>by <a href="#">Start Bootstrap</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
+
+                <label for="exampleSelect1">Зони впливу ораганізації</label>
+      <div class="checkbox">
+          <label><input type="checkbox" name="">Люди з вадами</label>
+        </div> 
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Медіа</label>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Blog Post Row -->
-        <div class="row">
-            <div class="col-md-1 text-center">
-                <p><i class="fa fa-file-text fa-4x"></i>
-                </p>
-                <p>June 17, 2014</p>
-            </div>
-            <div class="col-md-5">
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3><a href="blog-post.html">Blog Post Title</a>
-                </h3>
-                <p>by <a href="#">Start Bootstrap</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Право</label>
         </div>
-        <!-- /.row -->
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Політика</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Расизм/дискримінація</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Спорт/відновлення</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Звірі</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Діти/підлітки/сироти</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Спільноти</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Комп'ютерні технології</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Кризова підримка</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Ліквідація наслідків стихійних лих/безпека</label>
+        </div>
 
-        <hr>
 
-        <!-- Pager -->
-        <div class="row">
-            <ul class="pager">
-                <li class="previous"><a href="#">&larr; Older</a>
-                </li>
-                <li class="next"><a href="#">Newer &rarr;</a>
-                </li>
-            </ul>
+        <!--  -->
+
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Безробіття</label>
+        </div>
+       <div class="checkbox">
+          <label><input type="checkbox" name="">Навколишнє середовище</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Релігія</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Здоров'я/медицина</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Безпритульні</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Браконьєрство</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Еміграція/іміграція/міграція</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Волонтерство закордоном</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Освіта</label>
+        </div>
+
+
+                 <hr>
+
+            </div>
+            <!-- опрляіврплівопілв 
+            <div class="col-md-3">
+                <label for="exampleSelect1"></label>
+
+            <div class="checkbox">
+          <label><input type="checkbox" name="">Безробіття</label>
+        </div>
+       <div class="checkbox">
+          <label><input type="checkbox" name="">Навколишнє середовище</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Релігія</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Здоров'я/медицина</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Безпритульні</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Браконьєрство</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Еміграція/іміграція/міграція</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Волонтерство закордоном</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Освіта</label>
+        </div>
+                
+        </div>
+        <!-- лаидтчлатчид -->
+
         </div>
         <!-- /.row -->
 

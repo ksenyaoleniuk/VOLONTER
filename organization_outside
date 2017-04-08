@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="firstApplication">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+	  <!--script language="javascript"-->
+    <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script-->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<script language="javascript">
+   angular
+      .module('firstApplication', ['ngMaterial'])
+      .controller('autoCompleteController', autoCompleteController);
+
+   function autoCompleteController ($timeout, $q, $log) {
+      var self = this;
+      self.simulateQuery = false;
+      self.isDisabled    = false;
+      // list of states to be displayed
+      self.states        = loadStates();
+      self.querySearch   = querySearch;
+      self.selectedItemChange = selectedItemChange;
+      self.searchTextChange   = searchTextChange;
+      self.newState = newState;
+      function newState(state) {
+         alert("This functionality is yet to be implemented!");
+      }
+      function querySearch (query) {
+         var results = query ? self.states.filter( createFilterFor(query) ) : self.states, deferred;
+         if (self.simulateQuery) {
+            deferred = $q.defer();
+            $timeout(function () {
+                  deferred.resolve( results );
+               },
+           Math.random() * 1000, false);
+            return deferred.promise;
+         } else {
+            return results;
+         }
+      }
+      function searchTextChange(text) {
+         $log.info('Text changed to ' + text);
+      }
+      function selectedItemChange(item) {
+         $log.info('Item changed to ' + JSON.stringify(item));
+      }
+      //build list of states as map of key-value pairs
+      function loadStates() {
+         var allStates = 'Львів, Київ, Стрий, Полтава, Тернопіль, Ужгород, Чернівці';
+         return allStates.split(/, +/g).map( function (state) {
+            return {
+               value: state.toLowerCase(),
+               display: state
+            };
+         });
+      }
+      //filter function for search query
+      function createFilterFor(query) {
+         var lowercaseQuery = angular.lowercase(query);
+         return function filterFn(state) {
+            return (state.value.indexOf(lowercaseQuery) === 0);
+         };
+      }
+   }
+</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/user_style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <img class="logo" src="static/logo.jpg" />
+                <a class="navbar-brand" href="index.html">VOLONTER</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li class="active">
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row" id="heading">
+            <div class="col-lg-12">
+                <h1 class="page-header">Відлуння</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row user_main">
+
+            <div class="col-md-8" >
+                <div id="user_main_info" class="user">
+                  <img id="user_photo" src="http://www.gravatar.com/avatar/4e258d4679ba777947ac73537effb1c3?s=47&d=http%3A%2F%2Fwww.techrepublic.com%2Fbundles%2Ftechrepubliccore%2Fimages%2Ficons%2Fstandard%2Ficon-user-default.png"/>
+                  <input class="form-control" id="user_mail_form" type="text" placeholder="enter your e-mail">
+                  <a class="btn btn-primary" id="create_event" href="#" role="button">Створити подію</a>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="user_info_box">
+              <h3>Про організацію</h3>
+                <ul>
+                  <div class="input-group" >
+            <span class="input-group-addon">Сфера</span><div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+              <div ng-switch="myVar">
+                <div ng-switch-when="Education"><p>Освіта</p></div>
+                <div ng-switch-when="Nature"><p>Природа</p></div>
+                <div ng-switch-when="Elder people"><p>Літні люди</p></div>
+
+
+              <div>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><label class="cbox1" value="first_checkbox"><input type="radio" ng-model="myVar" value="Education"><span for="cbox1">Освіта</span></label></li>
+              <li><label class="cbox1" value="first_checkbox"><input type="radio" ng-model="myVar" value="Nature"><span for="cbox1">Природа</span></label></li>
+              <li><label class="cbox1" value="first_checkbox"><input type="radio" ng-model="myVar" value="Elder people"><span for="cbox1">Літні люди</span></label></li>
+              <li><label class="cbox1" value="first_checkbox"><input type="radio" ng-model="myVar" value="Army"><span for="cbox1">Армія</span></label></li>
+            </ul>
+          </div></div></div
+                                  <div class="input-group">
+                     <span class="input-group-addon">Опис</span>
+                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                   </div></ul>
+            </div>
+            <div class="col-md-4" id="user_info_box_2">
+              <h3>Додаткова інформація</h3>
+                <ul>
+                  <div class="input-group">
+                    <span class="input-group-addon">Our website</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                  </div>
+                   <div class="input-group">
+                     <span class="input-group-addon">Our website</span>
+                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                   </div>
+                  </ul>
+            </div>
+
+
+        </div>
+
+        </div>
+        <!-- /.row -->
+
+
+        <hr id="user_hr">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row footer-row">
+                <div class="col-lg-12">
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Про нас</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Наша команда</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Допомогти</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Контакти</a>
+                </div>
+            </div>
+            <div class="social" id="social_pages">
+            <img class="logo footer-logo" src="static/fb_logo.png"/>
+            <img class="logo footer-logo" src="static/twit_logo.png"/>
+            <img class="logo footer-logo" src="static/insta_logo.png"/>
+
+          </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

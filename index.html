@@ -217,11 +217,11 @@
            <div class="row">
   <center>
         <div ng-repeat="i in items | searchFor:searchString">
-            <div class="col-md-7">
+            <div class="col-md-3">
                 <a href="{{i.url}}">
                 <img class="img-responsive img-hover" alt="Chania" ng-src="{{i.image}}" ></a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-9">
                       <a href="{{i.url}}">
                         <h3>{{i.title}}</h3></a>
                         <p>{{i.description}}</p>
@@ -393,7 +393,7 @@ function InstantSearchController($scope){
     {
       url: 'http://vidlunnia.ucu.edu.ua/',
       title: 'Відлуння',
-      image: src="http://placehold.it/350x150",
+      image: src="http://placehold.it/100x100",
      description:'1999 рік. Саме цього року розпочала свою діяльність студентська благодійна організація «Відлуння» Українського католицького університету на чолі з Тетяною Лисейко...'
     },
     {

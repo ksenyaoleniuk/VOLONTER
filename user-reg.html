@@ -20,17 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
-
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -124,94 +115,81 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Реєстрація користувача
-                    <small>Subheading</small>
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Blog Home One</li>
-                </ol>
             </div>
         </div>
-        <!-- /.row -->
-
+       
         <div class="row">
-
-            <!-- Blog Entries Column -->
             <div class="col-md-8">
-
-                <!-- First Blog Post -->
-                <h2>
-                    <a href="#">Blog Post Title</a>
-                </h2>
-               <!--  <hr>
-
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a> -->
-
-                <hr>
                 <div class="col-10">
+                    <!-- FORM STARTS - THIS IS FOR ANGULAR -->
+                    <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
 
-                <label for="example-text-input" class="col-2 col-form-label">Ім'я</label>
-  <div class="col-10">
-    <input class="form-control" type="text" value="Введіть ім'я" id="example-text-input">
-  </div>
-  </div>
+                    <div class="form-group">
+                        <label for="example-text-input" class="col-2 col-form-label">Ім'я</label>
+                            <input class="form-control" type="text" id="example-text-input" placeholder="Введіть ім'я" name="user" ng-model="user" required></input>
+                            <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                            <span ng-show="myForm.user.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
 
-<div class="col-10">
-  <label for="example-search-input" class="col-2 col-form-label">Прізвище</label>
-  <div class="col-10">
-    <input class="form-control" type="search" value="Введіть прізвище" id="example-search-input">
-  </div>
-  </div>
+                    <div class="form-group">
+                    <label for="example-text-input" class="col-2 col-form-label">Прізвище</label>
+                        <!-- <div class="col-10"> -->
+                            <input class="form-control" type="text" id="example-text-input" placeholder="Введіть приізвище" name="surname" ng-model="surname" required></input>
+                            <span style="color:red" ng-show="myForm.surname.$dirty && myForm.surname.$invalid">
+                            <span ng-show="myForm.surname.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
 
-  <div class="col-10">
-  <label for="example-search-input" class="col-2 col-form-label">Нікнейм</label>
-  <div class="col-10">
-    <input class="form-control" type="search" value="Введіть нікнейм" id="example-search-input">
-  </div>
-  </div>
+                    <div class="form-group">
+                        <label for="example-search-input" class="col-2 col-form-label">Нікнейм</label>
+                        <input class="form-control" type="search" placeholder="Введіть нікнейм" id="example-search-input" name="nickname" ng-model="nickname" required></input>
+                        <span style="color:red" ng-show="myForm.nickname.$dirty && myForm.nickname.$invalid">
+                        <span ng-show="myForm.nickname.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
 
-<div class="col-10">
-  <label for="example-email-input" class="col-2 col-form-label">Пошта</label>
-  <div class="col-10">
-    <input class="form-control" type="email" value="myexample@example.com" id="example-email-input">
-  </div>
-  </div>
+                    <div class="form-group">
+                        <label for="example-email-input" class="col-2 col-form-label">Пошта</label>
+                        <input class="form-control" type="email" placeholder="myexample@example.com" id="example-email-input" name="email" ng-model="email" required></input>
+                        <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                        <span ng-show="myForm.email.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
 
-  <div class="col-10">
-  <label for="example-password-input" class="col-2 col-form-label">Пароль</label>
-  <div class="col-10">
-    <input class="form-control" type="password" value="hunter2" id="example-password-input">
-  </div>
-</div>
+                    <div class="form-group">
+                        <label for="example-password-input" class="col-2 col-form-label">Пароль</label>
+                        <input class="form-control" type="password" placeholder="Введіть пароль" id="example-password-input" name="password" ng-model="password" required></input>
+                        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                        <span ng-show="myForm.password.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
 
-<div class="col-10">
-  <label for="example-password-input" class="col-2 col-form-label">Повторіть  пароль</label>
-  <div class="col-10">
-    <input class="form-control" type="password" value="hunter2" id="example-password-input">
-  </div>
-</div>
+                    <div class="form-group">
+                       <label for="example-password-input" class="col-2 col-form-label">Повторіть ароль</label>
+                      <!-- <div class="col-10"> -->
+                        <input class="form-control" type="password" placeholder="Введіть пароль" id="example-password-input" name="password_2" ng-model="password_2" required></input>
+                        <span style="color:red" ng-show="myForm.password_2.$dirty && myForm.password_2.$invalid">
+                        <span ng-show="myForm.password_2.$error.required">Це обов'язкове поле для вводу!</span>
+                    <!-- FORM ENDS -->
+                    </form>       
+                    </div>
+                    
 
-   <div class="form-group">
-    <label for="exampleSelect1">Виберіть місцеположення</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Київ</option>
-      <option>Львів</option>
-      <option>Одеса</option>
-      <option>Харків</option>
-      <option>Дніпро</option>
-    </select>
-  </div>
+                   <div class="form-group">
+                    <label for="exampleSelect1">Виберіть місцеположення</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Київ</option>
+                      <option>Львів</option>
+                      <option>Одеса</option>
+                      <option>Харків</option>
+                      <option>Дніпро</option>
+                    </select>
+                  </div>
 
-  <div class="input-group">
-                                      <div class="checkbox">
-                                        <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Запам'ятати мене
-                                        </label>
-                                      </div>
-                                    </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                       <label>
+                       <input id="login-remember" type="checkbox" name="remember" value="1"> Запам'ятати мене
+                       </label>
+                      </div>
+                    </div>
 
 
 <button type="button" class="btn btn-success">Зареєструватись</button>
@@ -226,11 +204,7 @@
   <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label>              
   <hr>
             </div>
-
-
-
-
-
+            </div>
 
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
@@ -286,7 +260,18 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    
+    <!-- anjular script -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script>
+    var app = angular.module('myApp', []);
+        app.controller('validateCtrl', function($scope) {
+        // $scope.user = "Введіть ім'я";
+        // $scope.email = 'john.doe@gmail.com';
+    });
+    </script>
+    <!-- anjular script ends -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

@@ -11,495 +11,120 @@
     <!--TITLE-->
     <title>Modern Business - Start Bootstrap Template</title>
     <!-- Include Bootstrap Multiselect CSS-->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap-dropselect.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="assets/css/Footer-with-button-logo.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Include Bootstrap Multiselect CSS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="bootstrap-dropselect.js"></script>
+    
+    <link href="css/new.css" rel="stylesheet">
+    
 </head>
 
-<body>
+<!-- Initialize a new AngularJS app and associate it with a module named "instantSearch"-->
+  <body ng-app="instantSearch" ng-controller="InstantSearchController">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">VOLONTER</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="services.html"><span class="glyphicon glyphicon-user"></span> Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Контакти</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Змінити мову <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Українська</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">English</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Робити добро - просто і легко
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-home"></i> Додати організацію</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Долучитися</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-user"></i> Зареєструватися</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Долучитися</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-volume-up"></i> Створити Подію</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Долучитися</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-       <!-- Content Row -->
-        <div class="row">
-            <!-- Sidebar Column -->
-             <div class="container-fluid">
-                <div class="row content">
-            <div class="col-lg-6 sidenav">
-            <hr />
-          <!-- ololol -->
-                <div class="form-group">
-                <label for="exampleSelect1">Зацікавленості</label>
-                   <select class="form-control" id="exampleSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-<!-- ololol -->
-                <div class="form-group">
-                <label for="exampleSelect1">Зацікавленості</label>
-                   <select class="form-control" id="exampleSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-
-<!-- ololol -->
-                <div class="form-group">
-                <label for="exampleSelect1">Зацікавленості</label>
-                   <select class="form-control" id="exampleSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-
-<!-- ololol -->
-                <div class="form-group">
-                <label for="exampleSelect1">Зацікавленості</label>
-                   <select class="form-control" id="exampleSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                 <div class="form-group">
-                  <label for="example-date-input" class="col-2 col-form-label">Дата</label>
-                      <div class="col-10">
-                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                      </div>
-                    </div>
-                  <hr />
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                
-
-            </div>
-        <!-- end left bar -->
-    <!-- Page Content -->
-    <div class="col-lg-3">
-
-        <!-- Page Heading/Breadcrumbs -->
-       <!-- <div class="row content"> -->
-         
-               <div class="col-lg-12 sidenav">
-          <hr>
-
-     <label for="exampleSelect1">Зацікавленості</label>
-      <div class="checkbox">
-          <label><input type="checkbox" name="">Люди з вадами</label>
-        </div>
-       <div class="checkbox">
-          <label><input type="checkbox" name="">Медіа</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Право</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Політика</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Расизм/дискримінація</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Спорт/відновлення</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Звірі</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Діти/підлітки/сироти</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Спільноти</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Комп'ютерні технології</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Кризова підримка</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Ліквідація наслідків стихійних лих/безпека</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Освіта</label>
-        </div>
-        
-
-
-        <!-- /.row -->
-
-        <hr>
-        </div>
-        </div>
-
-    <!-- /.container -->
-      
-    <div class="col-lg-3">
-
-        <!-- Page Heading/Breadcrumbs -->
-       <!-- <div class="row content"> -->
-         
-               <div class="col-lg-12  sidenav">
-          <hr>
-
-     <label for="exampleSelect1">Зацікавленості</label>
-      <div class="checkbox">
-          <label><input type="checkbox" name="">Безробіття</label>
-        </div>
-       <div class="checkbox">
-          <label><input type="checkbox" name="">Навколишнє середовище</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Релігія</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Здоров'я/медицина</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Безпритульні</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Браконьєрство</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Еміграція/іміграція/міграція</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Волонтерство закордоном</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Something</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Something</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Something</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Something</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="">Something</label>
-        </div>
-        
-
-
-        <!-- /.row -->
-    
-
-        
-
-        <!-- Features Section 
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
-
-    
-
-
-        <hr>
-
-      
-
+    <div class="bar">
+      <!-- Create a binding between the searchString model and the text field -->
+      <input type="text" ng-model="searchString" placeholder="Enter your search terms" />
     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-    
+    <ul>
+      <!-- Render a li element for every entry in the items array. Notice
+         the custom search filter "searchFor". It takes the value of the
+         searchString model as an argument.
+       -->
+      <li ng-repeat="i in items | searchFor:searchString">
+        <a href="{{i.url}}"><img ng-src="{{i.image}}" /></a>
+        <p>{{i.title}}</p>
+      </li>
+    </ul>
 
-    <!-- /.container -->
-        <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h2 class="logo"><a href="#"> VOLONTER </a></h2>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                    </div>
-                    <button type="button" class="btn btn-default">Contact us</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
-        </div>
-    </footer>
+    <!-- Include AngularJS from Google's CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<script type="text/javascript">
+  // Define a new module for our app
+var app = angular.module("instantSearch", []);
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+// Create the instant search filter
 
-    <!-- Script to Activate the Carousel -->
-    <script>
+app.filter('searchFor', function(){
 
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-    <script>
-      $(document).ready(function () {
-        var mySelect = $('#first-disabled2');
+  // All filters must return a function. The first parameter
+  // is the data that is to be filtered, and the second is an
+  // argument that may be passed with a colon (searchFor:searchString)
 
-        $('#special').on('click', function () {
-          mySelect.find('option:selected').prop('disabled', true);
-          mySelect.selectpicker('refresh');
-        });
+  return function(arr, searchString){
 
-        $('#special2').on('click', function () {
-          mySelect.find('option:disabled').prop('disabled', false);
-          mySelect.selectpicker('refresh');
-        });
+    if(!searchString){
+      return arr;
+    }
 
-        $('#basic2').selectpicker({
-          liveSearch: true,
-          maxOptions: 1
-        });
-      });
-    </script>
-</body>
+    var result = [];
+
+    searchString = searchString.toLowerCase();
+
+    // Using the forEach helper method to loop through the array
+    angular.forEach(arr, function(item){
+
+      if(item.title.toLowerCase().indexOf(searchString) !== -1){
+        result.push(item);
+      }
+
+    });
+
+    return result;
+  };
+
+});
+
+// The controller
+
+function InstantSearchController($scope){
+
+  // The data model. These items would normally be requested via AJAX,
+  // but are hardcoded here for simplicity. See the next example for
+  // tips on using AJAX.
+
+  $scope.items = [
+    {
+      // url: 'http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/',
+      title: 'Відлуння',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/07/featured_4-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/08/simple-registration-system-php-mysql/',
+      title: 'Making a Super Simple Registration System With PHP and MySQL',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/08/simple_registration_system-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/08/slideout-footer-css/',
+      title: 'Create a slide-out footer with this neat z-index trick',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/08/slide-out-footer-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/06/digital-clock/',
+      title: 'How to Make a Digital Clock with jQuery and CSS3',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/06/digital_clock-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/05/diagonal-fade-gallery/',
+      title: 'Smooth Diagonal Fade Gallery with CSS3 Transitions',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/05/featured-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/',
+      title: 'Mini AJAX File Upload Form',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/05/ajax-file-upload-form-100x100.jpg'
+    },
+    {
+      url: 'http://tutorialzine.com/2013/04/services-chooser-backbone-js/',
+      title: 'Your First Backbone.js App – Service Chooser',
+      image: 'http://cdn.tutorialzine.com/wp-content/uploads/2013/04/service_chooser_form-100x100.jpg'
+    }
+  ];
+
+
+}
+
+</script>>
 
 </html>

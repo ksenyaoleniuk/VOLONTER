@@ -12,24 +12,50 @@
     <title>Modern Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/user_style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/try_style.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <!--script src="js/jquery.js"></script-->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      var availableTags = [
+        "Івано-Франківськ",
+        "Київ",
+        "Львів",
+        "Нововолинськ",
+        "Полтава",
+        "Стрий",
+        "Тернопіль",
+        "Ужгород",
+        "Червоноград",
+        "Чернівці"
+      ];
+      $( ".ui-widget #tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
+
+
+
 
 </head>
+
 
 <body>
 
@@ -132,15 +158,13 @@
                 <div id="user_main_info" class="user">
                   <img id="user_photo" src="http://www.gravatar.com/avatar/4e258d4679ba777947ac73537effb1c3?s=47&d=http%3A%2F%2Fwww.techrepublic.com%2Fbundles%2Ftechrepubliccore%2Fimages%2Ficons%2Fstandard%2Ficon-user-default.png"/>
                   <input class="form-control" id="user_mail_form" type="text" placeholder="enter your e-mail">
-
-
                 </div>
             </div>
 
             <div class="col-md-4" id="user_info_box">
               <h3>About me</h3>
                 <ul>
-                    <div class="input-group">
+                    <!--div class="input-group">
               <span class="input-group-addon">My interests</span><div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 All
@@ -153,25 +177,29 @@
                 <li><input type="checkbox" class="cbox1" value="first_checkbox"><label for="cbox1">Army</label></li>
               </ul>
             </div>
-                     </div>
+          </div-->
                    <div class="input-group">
                      <span class="input-group-addon">My experience</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                  <div class="input-group">
+                   </div>
+                   <div class="input-group">
                      <span class="input-group-addon">Education</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                  <div class="input-group">
+                   </div>
+                   <div class="input-group">
                      <span class="input-group-addon">Languages</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                                 </ul>
+                   </div></ul>
             </div>
             <div class="col-md-4" id="user_info_box_2">
-              <h3>Additional information</h3>
+              <h3>Додаткова інформація</h3>
                 <ul>
                   <div class="input-group">
-                     <span class="input-group-addon">My location</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>
+                  <span class="input-group-addon">location</span>
+                      <div class="ui-widget">
+                        <input id="tags" class="form-control">
+                      </div>
+                  </div>
                    <div class="input-group">
                      <span class="input-group-addon">My pages</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
@@ -206,10 +234,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--script src="js/jquery.js"></script-->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--script src="js/bootstrap.min.js"></script-->
 
 </body>
 

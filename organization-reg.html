@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,6 +28,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      var availableTags = [
+        "Івано-Франківськ",
+        "Київ",
+        "Львів",
+        "Нововолинськ",
+        "Полтава",
+        "Стрий",
+        "Тернопіль",
+        "Ужгород",
+        "Червоноград",
+        "Чернівці"
+      ];
+      $( ".ui-widget #tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
 
 </head>
 
@@ -127,7 +152,7 @@
                 </h1>
 
             <div class="alert alert-danger">
-            <label for="example-password-input" class="col-2 col-form-label">Увага! Можливість реєстрації організацій надається тільки зареєстрованим користувачам.<a href="user-reg.html" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Натисніть щоб перейти до реєстрації користувача.</a></label>  
+            <label for="example-password-input" class="col-2 col-form-label">Увага! Можливість реєстрації організацій надається тільки зареєстрованим користувачам.<a href="user-reg.html" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Натисніть щоб перейти до реєстрації користувача.</a></label>
 
   <!-- <strong>Danger!</strong> Indicates a dangerous or potentially negative action. -->
             </div>
@@ -178,15 +203,15 @@
     <span ng-show="myForm.email.$error.required">Це обов'язкове поле для вводу!</span>
     <span ng-show="myForm.email.$error.email">Invalid email address.</span>
     <p type="submit"
-    ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+    ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
     myForm.email.$dirty && myForm.email.$invalid">
     </p>
       </form>
       </div>
 
    <div class="form-group">
-    <label for="exampleSelect1">Виберіть тип оргіназації</label>
-    
+    <label for="exampleSelect1">Виберіть тип організації</label>
+
     <select class="form-control" id="exampleSelect1" placeholder="ccc">
       <option>Nonprofit or community organization</option>
       <option>Govermanet agency</option>
@@ -197,14 +222,10 @@
   </div>
 
    <div class="form-group">
-    <label for="exampleSelect1">Виберіть місцеположення</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Київ</option>
-      <option>Львів</option>
-      <option>Одеса</option>
-      <option>Харків</option>
-      <option>Дніпро</option>
-    </select>
+    <label for="exampleSelect1">Виберіть локацію</label>
+    <div class="ui-widget">
+      <input id="tags" class="form-control">
+    </div>
   </div>
   <div class="form-group">
   <label for="comment">Опис організації</label>
@@ -218,7 +239,7 @@
 
 
 
-              
+
 
             </div>
             </div>
@@ -235,7 +256,7 @@
                 <label for="exampleSelect1">Зони впливу ораганізації</label>
       <div class="checkbox">
           <label><input type="checkbox" name="">Люди з вадами</label>
-        </div> 
+        </div>
         <div class="checkbox">
           <label><input type="checkbox" name="">Медіа</label>
         </div>
@@ -302,18 +323,18 @@
         </div>
 
 
-                 
+
 
             </div>
-            
-                
+
+
         </div>
         <!-- лаидтчлатчид -->
 
         </div>
         <!-- /.row -->
 <hr>
-  <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label> 
+  <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label>
         <hr>
 
         <!-- Footer -->
@@ -329,9 +350,9 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--script src="js/jquery.js"></script-->
         <!-- anjular script -->
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script>
     var app = angular.module('myApp', []);
@@ -342,7 +363,7 @@
     </script>
     <!-- anjular script ends -->
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--script src="js/bootstrap.min.js"></script-->
 
 </body>
 

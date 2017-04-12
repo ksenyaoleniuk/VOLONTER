@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/user_style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/try_style.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <!--script src="js/jquery.js"></script-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      var availableTags = [
+        "Івано-Франківськ",
+        "Київ",
+        "Львів",
+        "Нововолинськ",
+        "Полтава",
+        "Стрий",
+        "Тернопіль",
+        "Ужгород",
+        "Червоноград",
+        "Чернівці"
+      ];
+      $( ".ui-widget #tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <img class="logo" src="static/logo.jpg" />
+                <a class="navbar-brand" href="index.html">VOLONTER</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li class="active">
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row" id="heading">
+            <div class="col-lg-12">
+                <h1 class="page-header">Vidlunnya</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row user_main">
+
+            <div class="col-md-8" >
+                <div id="user_main_info" class="user">
+                  <img id="user_photo" src="http://www.gravatar.com/avatar/4e258d4679ba777947ac73537effb1c3?s=47&d=http%3A%2F%2Fwww.techrepublic.com%2Fbundles%2Ftechrepubliccore%2Fimages%2Ficons%2Fstandard%2Ficon-user-default.png"/>
+                  <div class="form-control about" id="out_mail"><a href="https://mail.google.com">yaryna.korduba@gmail.com</a></div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="user_info_box">
+              <h3>About organization</h3>
+                <ul>
+                  <div class="input-group">
+                  <span class="input-group-addon">Сфери</span>
+                  <input id="msg"
+                  type="text" class="form-control" name="msg" placeholder="Additional Info">
+                  </div>
+            <div class="input-group">
+                     <span class="input-group-addon addon-org">Description</span>
+                     <input id="msg"
+                     type="text" id="desctipt" class="form-control" name="msg" placeholder="Additional Info">
+            </div></ul>
+            </div>
+            <div class="col-md-4" id="user_info_box_2">
+<h3>Додаткова інформація</h3>
+<ul>
+<div class="input-group">
+<span class="input-group-addon">Наша локація</span>
+    <div class="ui-widget">
+      <input id="tags" class="form-control">
+    </div>
+</div>
+<div class="input-group">
+<span class="input-group-addon">Наш вебсайт</span>
+<input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+</div>
+</ul>
+</div>
+        </div>
+        <!-- /.row -->
+
+
+        <hr id="user_hr">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row footer-row">
+                <div class="col-lg-12">
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Про нас</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Наша команда</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Допомогти</a>
+                  <a class="btn btn-primary btn-footer" href="#" role="button">Контакти</a>
+                </div>
+            </div>
+            <div class="social" id="social_pages">
+            <img class="logo footer-logo" src="static/fb_logo.png"/>
+            <img class="logo footer-logo" src="static/twit_logo.png"/>
+            <img class="logo footer-logo" src="static/insta_logo.png"/>
+
+          </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+</body>
+
+</html>

@@ -26,6 +26,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script>
     $( function() {
       var availableTags = [
@@ -140,7 +141,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Реєстрація користувача
+                <h1 class="page-header">Реєстрація події
                 </h1>
             </div>
         </div>
@@ -152,55 +153,71 @@
                     <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
 
                     <div class="form-group">
-                        <label for="example-text-input" class="col-2 col-form-label">Ім'я</label>
-                            <input class="form-control" type="text" id="example-text-input" placeholder="Введіть ім'я" name="user" ng-model="user" required></input>
+                        <label for="example-text-input" class="col-2 col-form-label">Назва події</label>
+                            <input class="form-control" type="text" id="example-text-input" placeholder="Введіть назву події" name="user" ng-model="user" required></input>
                             <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
                             <span ng-show="myForm.user.$error.required">Це обов'язкове поле для вводу!</span>
                     </div>
 
+                    
                     <div class="form-group">
-                    <label for="example-text-input" class="col-2 col-form-label">Прізвище</label>
-                        <!-- <div class="col-10"> -->
-                            <input class="form-control" type="text" id="example-text-input" placeholder="Введіть приізвище" name="surname" ng-model="surname" required></input>
-                            <span style="color:red" ng-show="myForm.surname.$dirty && myForm.surname.$invalid">
-                            <span ng-show="myForm.surname.$error.required">Це обов'язкове поле для вводу!</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="example-search-input" class="col-2 col-form-label">Нікнейм</label>
-                        <input class="form-control" type="search" placeholder="Введіть нікнейм" id="example-search-input" name="nickname" ng-model="nickname" required></input>
-                        <span style="color:red" ng-show="myForm.nickname.$dirty && myForm.nickname.$invalid">
-                        <span ng-show="myForm.nickname.$error.required">Це обов'язкове поле для вводу!</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="example-email-input" class="col-2 col-form-label">Пошта</label>
+                        <label for="example-email-input" class="col-2 col-form-label">Пошта адміністратора події</label>
                         <input class="form-control" type="email" placeholder="myexample@example.com" id="example-email-input" name="email" ng-model="email" required></input>
                         <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
                         <span ng-show="myForm.email.$error.required">Це обов'язкове поле для вводу!</span>
                     </div>
 
                     <div class="form-group">
-                        <label for="example-password-input" class="col-2 col-form-label">Пароль</label>
-                        <input class="form-control" type="password" placeholder="Введіть пароль" id="example-password-input" name="password" ng-model="password" required></input>
-                        <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
-                        <span ng-show="myForm.password.$error.required">Це обов'язкове поле для вводу!</span>
-                    </div>
+                        <label for="exampleSelect1">Виберіть тип події</label>
+                        
+                        <select class="form-control" id="exampleSelect1" placeholder="ccc">
+                          <option>Разове волонтерство</option>
+                          <option>Щотижневе</option>
+                          <option>Волонтерство online</option>
+                          <option>Необмежене в часі</option>
+                          <option>Інше</option>
+                        </select>
+                      </div>
 
-                    <div class="form-group">
-                       <label for="example-password-input" class="col-2 col-form-label">Повторіть пароль</label>
-                      <!-- <div class="col-10"> -->
-                        <input class="form-control" type="password" placeholder="Введіть пароль" id="example-password-input" name="password_2" ng-model="password_2" required></input>
-                        <span style="color:red" ng-show="myForm.password_2.$dirty && myForm.password_2.$invalid">
-                        <span ng-show="myForm.password_2.$error.required">Це обов'язкове поле для вводу!</span>
-                    </div>
 
-                    <div class="form-group">
+                
+
+
+                   <div class="form-group">
                     <label for="exampleSelect1">Виберіть локацію</label>
                     <div class="ui-widget">
                       <input id="tags" class="form-control">
                     </div>
                   </div>
+
+                  <div class="form-group">
+                        <label for="example-email-input" class="col-2 col-form-label">Вулиця і номер будинку</label>
+                        <input class="form-control" type="email" placeholder="Введіть вулицю і номер будинку" id="example-email-input" name="email" ng-model="email" required></input>
+                        <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                        <span ng-show="myForm.email.$error.required">Це обов'язкове поле для вводу!</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-email-input" class="col-2 col-form-label">Максимальна кількість учасників події</label>
+                        <input class="form-control" type="email" placeholder="Введіть максимальну кількість учасників події" id="example-email-input" name="email" ng-model="email"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-email-input" class="col-2 col-form-label">Додаткові вимоги до учасників події</label>
+                        <input class="form-control" type="email" placeholder="Введіть додаткові умови учасників події(не обов'язково)" id="example-email-input" name="email" ng-model="email"></input>
+                      
+                    </div>
+
+
+
+
+                   <div class="form-group">
+                      <label for="comment">Опис події</label>
+                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+
+                 
+
 
                   <div class="form-group">
                     <div class="checkbox">
@@ -210,24 +227,24 @@
                       </div>
                     </div>
 
-                <button type="button" class="btn btn-success">Зареєструватись</button>
-                     <button type="button" class="btn btn-primary">Увійти з Facebook</button>
-                     <button type="button" class="btn btn-warning">Увійти з Linkedin</button>
 
-                    <!-- Indicates a dangerous or potentially negative action -->
-                    <button type="button" class="btn btn-danger">Увійти з Google+</button>
+<button type="button" class="btn btn-success">Зареєструватись</button>
+ <button type="button" class="btn btn-primary">Увійти з Facebook</button>
+ <button type="button" class="btn btn-warning">Увійти з Linkedin</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Увійти з Google+</button>
 
 
-                     <hr>
-                      <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label>
-                      <hr>
+ <hr>
+  <label for="example-password-input" class="col-2 col-form-label">Якщо Ви вже маєте аккаунт <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Увійти тут</a></label>
+  <hr>  
 
-                    <!-- FORM ENDS -->
-                    </form>
-                    </div>
-                    </div>
-                  
-
+            <!-- FROM  ENDS -->
+            </form>
+        
+            </div>
+            </div>
 
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
@@ -287,6 +304,7 @@
     <!-- anjular script -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
         <script>
     var app = angular.module('myApp', []);
         app.controller('validateCtrl', function($scope) {

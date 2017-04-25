@@ -9,28 +9,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Volonter</title>
 
     <!-- Bootstrap Core CSS -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/user_style.css" rel="stylesheet">
-    <!-- Custom CSS -->
-
+    <link href="font-awesome/css/font-awesome.min.css"  type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" type="text/css">
 
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- jQuery -->
-    <!--script src="js/jquery.js"></script-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+
     <script>
+
     $( function() {
       var availableTags = [
         "Івано-Франківськ",
@@ -44,9 +43,19 @@
         "Червоноград",
         "Чернівці"
       ];
+
+
       $( ".ui-widget #tags" ).autocomplete({
         source: availableTags
       });
+      $('#multiselect').multiselect({
+          buttonWidth: '100%',
+          allSelectedText: 'Все',
+          nonSelectedText: 'Оберіть інтереси',
+      });
+      $('.btn-default').css('text-align','center');
+      $(".caret").hide();
+
     } );
     </script>
 
@@ -137,30 +146,21 @@
             <div class="col-md-4" id="user_info_box">
               <h3>About me</h3>
                 <ul>
-                    <!--div class="input-group">
-              <span class="input-group-addon">My interests</span><div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                All
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><label class="cbox1" value="first_checkbox"><input type="checkbox"><span for="cbox1">Education</span></label></li>
-                <li><input type="checkbox" class="cbox1" value="first_checkbox"><label for="cbox1">Nature</label></li>
-                <li><input type="checkbox" class="cbox1" value="first_checkbox"><label for="cbox1">Elder people</label></li>
-                <li><input type="checkbox" class="cbox1" value="first_checkbox"><label for="cbox1">Army</label></li>
-              </ul>
-            </div>
-          </div-->
                    <div class="input-group">
-                     <span class="input-group-addon">My experience</span>
+                     <span class="input-group-addon">Досвід</span>
+                     <select id="multiselect" multiple="multiple" style="width: 100% !important;">
+                         <option value="1">Довкілля</option>
+                         <option value="2">Діти</option>
+                         <option value="3">Літні люди</option>
+                         <option value="4">Армія</option>
+                     </select>
+                   </div>
+                   <div class="input-group">
+                     <span class="input-group-addon">Освіта</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
                    </div>
                    <div class="input-group">
-                     <span class="input-group-addon">Education</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>
-                   <div class="input-group">
-                     <span class="input-group-addon">Languages</span>
+                     <span class="input-group-addon">Мови</span>
                      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
                    </div></ul>
             </div>
@@ -168,7 +168,7 @@
               <h3>Додаткова інформація</h3>
                 <ul>
                   <div class="input-group">
-                  <span class="input-group-addon">location</span>
+                  <span class="input-group-addon">Локація</span>
                       <div class="ui-widget">
                         <input id="tags" class="form-control">
                       </div>

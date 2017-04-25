@@ -9,29 +9,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Volonter</title>
 
     <!-- Bootstrap Core CSS -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/user_style.css" rel="stylesheet">
-    <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="css/try_style.css" rel="stylesheet">
-
-
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- jQuery -->
-    <!--script src="js/jquery.js"></script-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" type="text/css">
 
     <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
     <script>
+
     $( function() {
       var availableTags = [
         "Івано-Франківськ",
@@ -45,11 +42,22 @@
         "Червоноград",
         "Чернівці"
       ];
+
+
       $( ".ui-widget #tags" ).autocomplete({
         source: availableTags
       });
+      $('#multiselect').multiselect({
+          buttonWidth: '100%',
+          allSelectedText: 'Все',
+          nonSelectedText: 'Оберіть інтереси',
+      });
+      $('.btn-default').css('text-align','center');
+      $(".caret").hide();
+
     } );
     </script>
+
 
 
 
@@ -60,84 +68,58 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <img class="logo" src="static/logo.jpg" />
-                <a class="navbar-brand" href="index.html">VOLONTER</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li class="active">
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VOLONTER</a>
         </div>
-        <!-- /.container -->
-    </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html">Організації</a>
+                </li>
+                <li>
+                    <a href="about.html">Події</a>
+                </li>
+
+                <li>
+                    <a href="search.html">Пошук</a>
+                </li>
+
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Змінити мову <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="blog-home-1.html">Українська</a>
+                        </li>
+                        <li>
+                            <a href="blog-home-2.html">English</a>
+                        </li>
+                        <li>
+                            <a href="blog-post.html">Blog Post</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="enter.html"><span class="glyphicon glyphicon-user"></span>Увійти</a>
+                </li>
+                <li>
+                    <a href="contact.html">Зареєструватись</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -161,15 +143,19 @@
             </div>
 
             <div class="col-md-4" id="user_info_box">
-              <h3>About organization</h3>
+              <h3>Про організацію</h3>
                 <ul>
                   <div class="input-group">
-                  <span class="input-group-addon">Сфери</span>
-                  <input id="msg"
-                  type="text" class="form-control" name="msg" placeholder="Additional Info">
+                    <span class="input-group-addon">Досвід</span>
+                    <select id="multiselect" multiple="multiple" style="width: 100% !important;">
+                        <option value="1">Довкілля</option>
+                        <option value="2">Діти</option>
+                        <option value="3">Літні люди</option>
+                        <option value="4">Армія</option>
+                    </select>
                   </div>
             <div class="input-group">
-                     <span class="input-group-addon addon-org">Description</span>
+                     <span class="input-group-addon addon-org">Опис</span>
                      <input id="msg"
                      type="text" id="desctipt" class="form-control" name="msg" placeholder="Additional Info">
             </div></ul>

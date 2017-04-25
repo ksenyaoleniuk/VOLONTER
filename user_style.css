@@ -1,5 +1,6 @@
 body {
 }
+
 .navbar-header {
   width: 40%;
 }
@@ -13,6 +14,8 @@ body {
   width: 40%;
   float: right;
 }
+
+
 .footer-logo {
   float: right;
 }
@@ -21,128 +24,34 @@ body {
 }
 
 .col-lg-12 h1 {
-  margin-left: 1%;
   width: 100%;
 }
 
-.user_main1 {
+.user_main {
   height: 300px;
 }
-.container1 {
-  width: 40%;
-}
-.container2 h2{
-  margin-left: 54.5%;
-  margin-top: 0%;
-  font-family: cursive;
-}
-#Zone{
-  margin-left: -18%;
-  margin-top: 0%;
-  font-family: cursive;
-}
-#When{
-  position: relative;
-  top: -61px;
-  float: right;
-  margin-right: 23%;
-  font-family: cursive;
-}
-#panel1{
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 1);
-  position: relative;
-  top: -48px;
-  margin-left: 32%;
-  height: 200px;
-  width: 65%;
-  background-color: white;
-  border: 3px solid black;
-}
-#label99 {
-  border-radius: 15px;
-  border: 3px solid black;
-    position: relative;
-    top: -70px;
-    color: white;
-    font-family: cursive;
-    font-size: 60%;
-    left: 55%;
-}
-#p24 {
-  position: relative;
-  top: -20%;
-  font-family: cursive;
-  font-size: 450%;
-  left: 3%;
-}
-#Aliqium {
-  position: relative;
-  top: -25%;
-  left: 3%;
-  font-size: 20px;
-  font-family: cursive;
-}
-#Application {
-  position: relative;
-  top: -55%;
-  left: 3%;
-  font-size: 20px;
-  font-family: cursive;
-}
-.container2 iframe {
-  margin-left: 30%;
-}
-.container3 img{
-  width:17%;
-  height:17%;
-}
-#img1 {
-  margin-top: 3%;
-  margin-left: -15%;
-}
-#img2 {
-  position: relative;
-  top:82px;
-  margin-left: -18%;
-}
-#img3 {
-  position: relative;
-  top:158px;
-  margin-left: -18%;
-}
-#myMap {
-  margin-top: 2%;
-  margin-left: 40%;
-}
-.btn {
-  margin-top: 3%;
-  margin-left: 1.7%;
-}
-.btn1 {
-  width:30%;
+
+
+.col-md-8 {
+  width: 20%;
+
 }
 #user_mail_form, #create_event {
   margin-top: 5%;
   width: 90%;
 }
-#user_hr1 {
-  width: 100%;
-  margin-left: -100%;
-}
+
 #create_event {
   margin-left: 0;
 }
-#user_info_box {
+#user_info_box, #user_info_box_2{
   float: left;
 }
-#user_info_box h1 {
-  margin-top: 0%;
-  margin-left: 37%;
+#user_info_box h3, #user_info_box_2 h3 {
+  margin-top: 0;
 }
-#user_info_box p {
-  font-size: 130%;
-  text-align: center;
-  margin-left: 10%;
+#user_info_box ul, #user_info_box_2 ul {
+  padding-left: 0;
 }
 
 .input-group {
@@ -162,6 +71,7 @@ body {
 .form-control {
   text-align: center;
   border-radius: 3%;
+
 }
 
 
@@ -169,12 +79,11 @@ body {
   margin-left: 10px;
 
 }
+
 .dropdown-toggle {
   border-radius: 0%;
 }
-.user_main2 {
-  height: 300px;
-}
+
 
 label {
   margin-left: 5px;
@@ -195,6 +104,7 @@ label {
   border-color: #488E47;
   color: white;
 }
+
 .dropdown-toggle {
   display: inline-flex;
 }
@@ -238,4 +148,75 @@ li {
 
 #out_mail {
   margin-left: -5%;
+}
+
+.dropdown {
+  top:50%;
+}
+
+a {
+  color: #fff;
+}
+
+.dropdown dd,
+.dropdown dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.dropdown dd {
+  position: relative;
+}
+
+.dropdown a,
+.dropdown a:visited {
+  color: black;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+
+.dropdown dt a {
+  background-color: white;
+  display: block;
+  padding: 8px 20px 5px 10px;
+  min-height: 25px;
+  line-height: 24px;
+  overflow: hidden;
+  width: 272px;
+}
+
+.dropdown dt a span,
+.multiSel span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 3px 2px 0;
+}
+
+.dropdown dd ul {
+  background-color: white;
+  display: none;
+  left: 0px;
+  padding: 2px 15px 2px 5px;
+  top: 2px;
+  width: 280px;
+  list-style: none;
+  height: 100px;
+  overflow: auto;
+  color: black;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li a {
+  padding: 5px;
+  display: block;
+}
+
+#multiselect {
+  text-align: center;
 }

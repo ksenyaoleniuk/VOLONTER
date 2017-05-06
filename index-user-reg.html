@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="organization-list.html">Організації</a>
+                        <a href="about.html">Організації</a>
                     </li>
                     <li>
-                        <a href="listing-list.html">Події</a>
+                        <a href="about.html">Події</a>
                     </li>
                     
                     <li>
@@ -68,10 +68,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="enter.html"><span class="glyphicon glyphicon-user"></span> Увійти</a>
+                        <a href="enter.html"><span class="glyphicon glyphicon-user"></span>Моя сторінка</a>
                     </li>
                     <li>
-                        <a href="user-reg.html">Зареєструватись</a>
+                        <a href="organization-reg.html">Зареєструвати організацію</a>
                     </li>
                 </ul>
             </div>
@@ -170,143 +170,105 @@
 
 
 <div class="row">
-    <!-- <hr> -->
     <div class="col-sm-12 pull-center well">
-    <hr>
+      <hr>
           <form class="form-inline" action="#" method="POST">
               <center>  
-                  <label >
+                  <label>
                     <ol class="breadcrumb">
                     <li><h3><span class="glyphicon glyphicon-search"></span>  Швидкий пошук </h3>
                     </li>
-                    <!-- <li class="active">введіть назву організації:</li> -->
-                </ol>
-
-                 <!--  <h1 class="active">Швидкий пошук<small>Введіть назву організації:</small></h1> -->
+                    </ol>
                   </label>
-                     <!--  <select class="form-control">
-                            <option>Список сфер</option>
-                            <option>Список сфер</option>
-                      </select>
-                      <select class="form-control">
-                            <option>Вибір локації</option>
-                            <option>jgfhfhfh</option>
-                      </select> -->
-                                     
-                     <!--  <input class="form-control" type="date" value="Дата" id="example-date-input"> -->
-                      <input class="form-control" type="text" ng-model="searchString" placeholder="Введіть назву організації"/>
-                      </form>
+                <input class="form-control" type="text" ng-model="searchString" placeholder="Введіть назву організації"/>
+          </form>
 
-                      <hr>
-        <!-- </div> -->
-          
-          <!-- </div> -->
-        
-                     
-            
-<!--   <div class="row">
-      <div class="col-lg-7">
-                  <div ng-repeat="i in items | searchFor:searchString">
-                        <h1 class="page-header">{{i.title}}<a href="{{i.url}}"><img class="img-responsive img-hover" ng-src="{{i.image}}" /></a>
-                  </h1>
-                  </div>
-                  </div>
-            </div>        
-      </div>
-          
-  </body>            
-           --> 
+      <hr>
+     
            <div class="row">
-  <center>
-        <div ng-repeat="i in items | searchFor:searchString">
-            <div class="col-md-3">
-                <a href="{{i.url}}">
-                <img class="img-responsive img-hover" alt="Chania" ng-src="{{i.image}}" ></a>
-                </div>
-                <div class="col-md-9">
+              <center>
+                <div ng-repeat="i in items | searchFor:searchString">
+                  <div class="col-md-3">
+                    <a href="{{i.url}}">
+                      <img class="img-responsive img-hover" alt="Chania" ng-src="{{i.image}}" ></a>
+                  </div>
+                  <div class="col-md-9">
                       <a href="{{i.url}}">
                         <h3>{{i.title}}</h3></a>
                         <p>{{i.description}}</p>
                   
                   </div>
-                  </div>
+                </div>
             </div>        
+          </div>
       </div>
-      </div>
-    </body>            
-          
+  </center>        
       <hr>
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Якщо  у вас виникли питання або побажання щодо роботи сайту.ВАПРОЛДВВАПРОапролапфірвиіриаліоаліво варпилвоплв вролпвркоплв рлав</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Написати</a>
-                </div>
-            </div>
-        </div>
-        <!-- Have broblems ends -->
 
-        <!-- <hr> -->
-
+<div class="well">
+  <div class="row">
+    <div class="col-md-8">
+      <p>Якщо  у вас виникли питання або побажання щодо роботи сайту просимо надіслати нам лист.</p>
+    </div>
+  <div class="col-md-4">
+    <a class="btn btn-lg btn-default btn-block" href="#">Написати</a>
+  </div>
+  </div>
+  </div>
+  
 </div>
 
     
 
-    <!-- /.container -->
-       <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-sm-6">
-                    <!-- <h5>Наша команда    </h5> -->
-                   <!--  <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
- -->                </div>
 
-                <div class="col-sm-1">
-                    <h5>Команда</h5>
-                   <!--  <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
- -->                </div>
-
-                <div class="col-sm-1">
-                    <h5>Про нас</h5>
-                    <!-- <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-sm-1">
-                    <h5>Допомогти</h5>
-                    <!-- <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-sm-3">
+<footer>
+    <div class="container text-center">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Про нас</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Наша команда</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Допомогти</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <!-- <div class="col-sm-3"> -->
                     <div class="social-networks">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    
                     </div>
-                    <!-- <button type="button" class="btn btn-default">Contact us</button> -->
-                </div>
-            </div>
+        </ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <!-- <conter> -->
+                <li><a href="/">© 2013 Company Name.</a></li>
+            </ul>
         </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
-        </div>
+    </div>
+</div>
+    
     </footer>
+
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -439,5 +401,5 @@ function InstantSearchController($scope){
 }
 
 </script>
-
+</body>
 </html>

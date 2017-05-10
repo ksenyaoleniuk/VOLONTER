@@ -1,3 +1,160 @@
+ <!-- Select 1 starts 
+                <div class="form-group">
+                <label for="exampleSelect1">Зацікавленості</label>
+                   <select class="form-control" id="exampleSelect1">
+                      <option>Робота з неповносправними</option>
+                      <option>Музтка</option>
+                      <option>Співи</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <!-- Select 1 ends -->
+            <!-- Select 2 starts 
+                <div class="form-group">
+                <label for="exampleSelect1">За тривалістю</label>
+                   <select class="form-control" id="exampleSelect1">
+                      <option>Всі</option>
+                      <option>Багаторазові</option>
+                      <option>Одноразові</option>
+               
+                    </select>
+                  </div>
+                  <!-- Select 2 ends -->
+
+            <!-- Select 3 starts 
+                <div class="form-group">
+                <label for="exampleSelect1">За частотою</label>
+                   <select class="form-control" id="exampleSelect1">
+                      <option>Всі</option>
+                      <option>до 2 разів на тиждень</option>
+                      <option> > 2 разів на тиждень</option>
+                     
+                    </select>
+                  </div>
+
+            <!-- Select 3 ends -->
+            <!-- Select 4 starts 
+                <div class="form-group">
+                <label for="exampleSelect1">За днем тижня</label>
+                   <select class="form-control" id="exampleSelect1">
+                      <option>Всі</option>
+                      <option>Вихідні</option>
+                      <option>Будні</option>
+                     <!--  <option>4</option>
+                      <option>5</option> -->
+                  <!--   </select>
+                  </div> -->
+            <!-- Select 4 ends -->
+            <!-- Data starts 
+                 <div class="form-group">
+                  <label for="example-date-input" class="col-2 col-form-label">Дата</label>
+                      <div class="col-10">
+                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                      </div>
+                    </div>
+            <!-- Data ends -->
+                  <!-- <hr /> -->
+            <!-- Button starts -->
+                 <!--  <button type="submit" class="btn btn-primary">Submit</button> -->
+             <!-- Button ends -->
+
+            <!-- </div> -->
+    <!-- Ends -->
+    <!-- 
+    <div class="col-lg-3">
+
+      <div class="col-lg-12 sidenav">
+     <label for="exampleSelect1">Cфери</label>
+      <div class="checkbox">
+          <label><input type="checkbox" name="">Люди з вадами</label>
+        </div>
+       <div class="checkbox">
+          <label><input type="checkbox" name="">Медіа</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Право</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Політика</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Расизм/дискримінація</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Спорт/відновлення</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Звірі</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Діти/підлітки/сироти</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Спільноти</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Комп'ютерні технології</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Кризова підримка</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Ліквідація наслідків стихійних лих/безпека</label>
+        </div>
+        <!-- <div class="checkbox">
+          <label><input type="checkbox" name="">Освіта</label>
+        </div> -->
+        <!-- Cheack box ends -->
+        <!-- <hr> -->
+     <!--    </div>
+        </div> -->
+
+      <!--  
+    <div class="col-lg-3">
+         
+        <div class="col-lg-12  sidenav">
+     <label for="exampleSelect1"></label>
+      <div class="checkbox">
+          <label><input type="checkbox" name="">Безробіття</label>
+        </div>
+       <div class="checkbox">
+          <label><input type="checkbox" name="">Навколишнє середовище</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Релігія</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Здоров'я/медицина</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Безпритульні</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Браконьєрство</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Еміграція/іміграція/міграція</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Волонтерство закордоном</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Освіта</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Something</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Something</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="">Something</label>
+        </div>
+        <!-- <hr> -->
+
+        <!-- /.row -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,6 +282,6 @@ function InstantSearchController($scope){
 
 }
 
-</script>>
+</script>
 
 </html>

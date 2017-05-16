@@ -298,7 +298,7 @@ float: right;
 .command {
     width: 100%;
     height: initial;
-       /*border-radius: 50%;*/
+    border-radius: 50%;
 }
 
 .pho_name {

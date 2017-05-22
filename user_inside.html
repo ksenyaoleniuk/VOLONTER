@@ -9,107 +9,102 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Volonter</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/user_style.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css"  type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" type="text/css">
 
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+
+    <script>
+
+    $( function() {
+      var availableTags = [
+        "Івано-Франківськ",
+        "Київ",
+        "Львів",
+        "Нововолинськ",
+        "Полтава",
+        "Стрий",
+        "Тернопіль",
+        "Ужгород",
+        "Червоноград",
+        "Чернівці"
+      ];
+
+
+      $( ".ui-widget #tags" ).autocomplete({
+        source: availableTags
+      });
+      $('#multiselect').multiselect({
+          buttonWidth: '100%',
+          allSelectedText: 'Все',
+          nonSelectedText: 'Оберіть інтереси',
+      });
+      $('.btn-default').css('text-align','center');
+      $(".caret").hide();
+
+    } );
+    </script>
+
+
+
 
 </head>
+
 
 <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li class="active">
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VOLONTER</a>
         </div>
-        <!-- /.container -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html">Організації</a>
+                </li>
+                <li>
+                    <a href="about.html">Події</a>
+                </li>
+
+                <li>
+                    <a href="search.html">Пошук</a>
+                </li>
+
+                </li>
+                
+                <li>
+                    <a href="user_inside.html"><span class="glyphicon glyphicon-user"></span>Моя сторінка</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
     </nav>
 
     <!-- Page Content -->
@@ -119,139 +114,127 @@
         <div class="row" id="heading">
             <div class="col-lg-12">
                 <h1 class="page-header">Taras Shevchenko</h1>
-                <h2>Rating</h2>
             </div>
+            <div class="col-lg-12">
+  <ol class="breadcrumb">
+  <li><a class="fnt-header" href="index.html">я допомагаю дітям-сиротам із виконанням домашніх завдань, я допомагаю дітям-сиротам із виконанням домашніх завдань, я допомагаю дітям-сиротам із виконанням домашніх завдань, я допомагаю дітям-сиротам із виконанням домашніх завдань</a>
+  </li>
+  </ol>
+  </div>
         </div>
         <!-- /.row -->
 
         <!-- Portfolio Item Row -->
-        <div class="row">
+        <div class="row user_main">
 
-            <div class="col-md-8" >
+            <div class="col-md-3" >
                 <div id="user_main_info" class="user">
                   <img id="user_photo" src="http://www.gravatar.com/avatar/4e258d4679ba777947ac73537effb1c3?s=47&d=http%3A%2F%2Fwww.techrepublic.com%2Fbundles%2Ftechrepubliccore%2Fimages%2Ficons%2Fstandard%2Ficon-user-default.png"/>
-                  <input class="form-control" id="user_mail_form" type="text" placeholder="enter your e-mail">
+                  <button class="btn btn-default like" role="button" href="#">Зберегти</button>
 
-                    <!--Indicators -->
-                    <!--ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol-->
-
-                    <!-- Wrapper for slides -->
-                    <!--div class="carousel-inner">
-                        <div class="item active">
-                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                        </div>
-                    </div-->
-
-                    <!-- Controls -->
-                    <!--a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a-->
                 </div>
             </div>
 
             <div class="col-md-4" id="user_info_box">
-              <h3>About me</h3>
+              <h3>Про менеч</h3>
                 <ul>
-                  <div class="input-group">
-                     <span class="input-group-addon">My interests</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                  <div class="input-group">
-                     <span class="input-group-addon">My experience</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                  <div class="input-group">
-                     <span class="input-group-addon">Education</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                  <div class="input-group">
-                     <span class="input-group-addon">Languages</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>                                 </ul>
-            </div>
-            <div class="col-md-4" id="user_info_box_2">
-              <h3>Additional information</h3>
-                <ul>
-                  <div class="input-group">
-                     <span class="input-group-addon">My location</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                   <div class="input-group">
+                     <span class="input-group-addon addon-org">Сфери</span>
+                     <select id="multiselect" multiple="multiple" style="width: 100% !important;">
+                         <option value="1">Довкілля</option>
+                         <option value="2">Діти</option>
+                         <option value="3">Літні люди</option>
+                         <option value="4">Армія</option>
+                     </select>
                    </div>
                    <div class="input-group">
-                     <span class="input-group-addon">My pages</span>
-                     <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-                   </div>
+                  <span class="input-group-addon addon-org">Місто</span>
+                      <div class="ui-widget">
+                        <input id="tags" class="form-control">
+                      </div>
+                  </div>
+                  <div class="input-group">
+            <span class="input-group-addon addon-org">Адреса</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+            </div>
+                   </ul>
+            </div>
+            <div class="col-md-4" id="user_info_box_2">
+              <h3>Додаткова інформація</h3>
+                <ul>
+                  
+                   <div class="input-group">
+            <span class="input-group-addon addon-org">Вебсайт</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+            </div>
+            <div class="input-group">
+            <span class="input-group-addon addon-org">e-mail</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+            </div>    
                   </ul>
             </div>
 
         </div>
         <!-- /.row -->
+</div>
 
-        <!-- Related Projects Row -->
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="page-header">Your feed</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                  <a class="btn btn-primary" href="#" role="button">Про нас</a>
-                  <a class="btn btn-primary" href="#" role="button">Наша команда</a>
-                  <a class="btn btn-primary" href="#" role="button">Допомогти</a>
-                  <a class="btn btn-primary" href="#" role="button">Контакти</a>
-                </div>
-            </div>
-        </footer>
-
+    <div class="container text-center">
+    <hr />
+  <div class="row ">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Про нас</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Наша команда</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Допомогти</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <!-- <div class="col-sm-3"> -->
+                    <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
+                        <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                      </ul> 
+        </div>
+      </div>  
     </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <!-- <conter> -->
+                <li><a href="/">© 2017 Lviv_Volunteers.</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    </footer>
+
+
+
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--script src="js/jquery.js"></script-->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--script src="js/bootstrap.min.js"></script-->
 
 </body>
 

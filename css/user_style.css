@@ -298,7 +298,7 @@ float: right;
 .command {
     width: 100%;
     height: initial;
-    border-radius: 50%;
+       /*border-radius: 50%;*/
 }
 
 .pho_name {
@@ -308,3 +308,7 @@ float: right;
 .pho_name a {
     }
 
+.about-us {
+  text-align: justify;
+  font-size: 20px;
+}

@@ -45,6 +45,7 @@ template {
 }
 a {
   background-color: transparent;
+
 }
 a:active,
 a:hover {
@@ -254,7 +255,7 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: # !important;
   }
   .table-bordered th,
   .table-bordered td {
@@ -4612,18 +4613,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: transparent;
 }
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #080808;
-}
-.navbar-inverse .navbar-nav > .disabled > a,
-.navbar-inverse .navbar-nav > .disabled > a:hover,
-.navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: #444;
-  background-color: transparent;
-}
+
+
 .navbar-inverse .navbar-toggle {
   border-color: #333;
 }

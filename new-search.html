@@ -27,26 +27,7 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <script>
-    $( function() {
-      var availableTags = [
-        "Івано-Франківськ",
-        "Київ",
-        "Львів",
-        "Нововолинськ",
-        "Полтава",
-        "Стрий",
-        "Тернопіль",
-        "Ужгород",
-        "Червоноград",
-        "Чернівці"
-      ];
-      $( ".ui-widget #tags" ).autocomplete({
-        source: availableTags
-      });
-    } );
-    </script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body id="body-colour">
@@ -327,7 +308,7 @@
                          </div>
                        
                         <select class="form-control">
-                            <option>Вибір міста</option>
+                            <option>Вибір міcта</option>
                             <option>jgfhfhfh</option>
                         </select>
                                            
@@ -735,13 +716,25 @@
     </footer>
     <!-- anjular script -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <script>
-    var app = angular.module('myApp', []);
-        app.controller('validateCtrl', function($scope) {
-        // $scope.user = "Введіть ім'я";
-        // $scope.email = 'john.doe@gmail.com';
-    });
+   
+<script>
+    $( function() {
+      var availableTags = [
+        "Івано-Франківськ",
+        "Київ",
+        "Львів",
+        "Нововолинськ",
+        "Полтава",
+        "Стрий",
+        "Тернопіль",
+        "Ужгород",
+        "Червоноград",
+        "Чернівці"
+      ];
+      $( ".ui-widget #tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
     </script>
 
     <!-- anjular script ends -->

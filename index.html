@@ -12,6 +12,8 @@
     <title>Modern Business - Start Bootstrap Template</title>
     <!-- Include Bootstrap Multiselect CSS-->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     
@@ -251,6 +253,7 @@
                         <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
                         <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        
                       </ul> 
         </div>
       </div>  
@@ -275,33 +278,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Script to Activate the Carousel -->
-    <script type="text/javascript">
+    <script src="js/carousel.js"></script>
 
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 
-    <script>
-      $(document).ready(function () {
-        var mySelect = $('#first-disabled2');
-
-        $('#special').on('click', function () {
-          mySelect.find('option:selected').prop('disabled', true);
-          mySelect.selectpicker('refresh');
-        });
-
-        $('#special2').on('click', function () {
-          mySelect.find('option:disabled').prop('disabled', false);
-          mySelect.selectpicker('refresh');
-        });
-
-        $('#basic2').selectpicker({
-          liveSearch: true,
-          maxOptions: 1
-        });
-      });
-    </script>
+  
 
 
 

@@ -34,65 +34,11 @@
 <!--         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 
-    <script>
+    <script src="js/org.js"></script>
+  <link href="css/custom.css" rel="stylesheet">
 
-    $( function() {
-      var availableTags = [
-        "Івано-Франківськ",
-        "Київ",
-        "Львів",
-        "Нововолинськ",
-        "Полтава",
-        "Стрий",
-        "Тернопіль",
-        "Ужгород",
-        "Червоноград",
-        "Чернівці"
-      ];
-
-
-      $( ".ui-widget #tags" ).autocomplete({
-        source: availableTags
-      });
-      $('#multiselect').multiselect({
-          buttonWidth: '100%',
-          allSelectedText: 'Все',
-          nonSelectedText: 'Оберіть інтереси',
-      });
-      $('.btn-default').css('text-align','center');
-      $(".caret").hide();
-
-
-      $('.tab-content').hide();
-   $('#hidden_opt').hide();
-   $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-        $('.tab-content').show();
-        $('#hidden_opt').show();
-    });
-
-    $('#hidden_opt').click(function() {
-      $('.tab-content').hide();
-      $(this).hide();
-    })
-
-$('#myCarousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  }
-  else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }   
-});
-
-    } );
-    </script>
+    
+   
 
 
 
@@ -103,7 +49,7 @@ $('#myCarousel .item').each(function(){
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="header">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
